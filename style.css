@@ -43,3 +43,25 @@ input:checked + label[for="female"]{
   background-position: 0 0;
   color: #ce1010;
 }
+
+/* Checkbox Styles */
+input[type="checkbox"]{
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+label[for="web"],label[for="photoshop"],label[for="nintendo"]{
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 26px;
+  background: url(img/checks.png) no-repeat;
+  background-position: 0 -99px;
+  line-height: 22px;
+  cursor: pointer;
+}
+input:checked + label[for="web"],
+input:checked + label[for="photoshop"],
+input:checked + label[for="nintendo"]{
+  background-position: 0 -65px;
+  color: #ce1010;
+}
